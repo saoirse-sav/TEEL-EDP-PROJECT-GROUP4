@@ -38,8 +38,8 @@ Partial Class Form1
         btnClear = New Button()
         btnDelete = New Button()
         btnLoadData = New Button()
-        DataGridView1 = New DataGridView()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        dgvRentals = New DataGridView()
+        CType(dgvRentals, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' txtID
@@ -181,14 +181,14 @@ Partial Class Form1
         btnLoadData.Text = "Load Data"
         btnLoadData.UseVisualStyleBackColor = True
         ' 
-        ' DataGridView1
+        ' dgvRentals
         ' 
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(3, 336)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.RowHeadersWidth = 51
-        DataGridView1.Size = New Size(794, 217)
-        DataGridView1.TabIndex = 19
+        dgvRentals.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvRentals.Location = New Point(3, 336)
+        dgvRentals.Name = "dgvRentals"
+        dgvRentals.RowHeadersWidth = 51
+        dgvRentals.Size = New Size(794, 217)
+        dgvRentals.TabIndex = 19
         ' 
         ' Form1
         ' 
@@ -196,7 +196,7 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ActiveCaption
         ClientSize = New Size(800, 554)
-        Controls.Add(DataGridView1)
+        Controls.Add(dgvRentals)
         Controls.Add(btnLoadData)
         Controls.Add(btnDelete)
         Controls.Add(btnClear)
@@ -215,7 +215,7 @@ Partial Class Form1
         Controls.Add(txtID)
         Name = "Form1"
         Text = "Car Rental System"
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        CType(dgvRentals, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -236,6 +236,6 @@ Partial Class Form1
     Friend WithEvents btnClear As Button
     Friend WithEvents btnDelete As Button
     Friend WithEvents btnLoadData As Button
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgvRentals As DataGridView
 
 End Class
