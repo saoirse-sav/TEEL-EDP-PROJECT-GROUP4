@@ -2,11 +2,11 @@
 Module DBConnection
         Public conn As MySqlConnection
 
-        ' Replace this with your school’s database settings later
-        Public connectionString As String = "server=localhost;user id=root;password=;database=car_rental_db;"
 
-        ' Function to open connection
-        Public Sub OpenConnection()
+    Public connectionString As String = "server=localhost;user id=root;password=;database=car_rental_db;"
+
+
+    Public Sub OpenConnection()
             Try
                 conn = New MySqlConnection(connectionString)
                 conn.Open()
@@ -15,8 +15,8 @@ Module DBConnection
             End Try
         End Sub
 
-        ' Function to close connection
-        Public Sub CloseConnection()
+
+    Public Sub CloseConnection()
             Try
                 If conn IsNot Nothing Then
                     conn.Close()
