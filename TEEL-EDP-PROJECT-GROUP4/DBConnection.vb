@@ -3,7 +3,7 @@ Module DBConnection
         Public conn As MySqlConnection
 
 
-    Public connectionString As String = "server=localhost;user id=root;password=;database=car_rental_db;"
+    Public connectionString As String = "server=localhost; user id=root; password=jemi17sao; database=car_rental_db;"
 
 
     Public Sub OpenConnection()

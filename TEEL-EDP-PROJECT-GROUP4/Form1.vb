@@ -63,8 +63,8 @@ Public Class Form1
             cmd.Parameters.AddWithValue("@car", txtCarModel.Text)
             cmd.Parameters.AddWithValue("@renter", txtRenterName.Text)
             cmd.Parameters.AddWithValue("@start", txtStartDate.Text)
-            cmd.Parameters.AddWithValue("@end", txtEndDate.Text)
-            cmd.Parameters.AddWithValue("@id", txtID.Text)
+            cmd.Parameters.AddWithValue("@end", txtEndDate.Text) 'dapat year muna, bago months, then days.
+            cmd.Parameters.AddWithValue("@id", txtID.Text) 'same here
 
             cmd.ExecuteNonQuery()
             conn.Close()
